@@ -1,22 +1,33 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
+  <head>
+    <title>Timeline</title>
+    <script
+      type="text/javascript"
+      src="https://unpkg.com/vis-timeline@latest/standalone/umd/vis-timeline-graph2d.min.js"
+    ></script>
+    <link
+      href="https://unpkg.com/vis-timeline@latest/styles/vis-timeline-graph2d.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
 
-<head>
-	<title>Timeline</title>
-	<script type="text/javascript"
-		src="https://unpkg.com/vis-timeline@latest/standalone/umd/vis-timeline-graph2d.min.js"></script>
-	<link href="https://unpkg.com/vis-timeline@latest/styles/vis-timeline-graph2d.min.css" rel="stylesheet"
-		type="text/css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
 
-	<link rel="stylesheet" href="./style.css">
-</head>
+  <body>
+  
+    <div class="center">
+		<h1>
+			Interactive Timeline 
+		</h1>
+		<p>
+			It's an interactive Timeline that shows all the events in order,<br>
+			you can zoom in or out, and you move it with your mouse.
+		</p>
+      <div id="visualization"></div>
+    </div>
 
-<body>
-	<div class="center">
-		<div id="visualization"></div>
-	</div>
-
-	<script src="./main.js"></script>
-</body>
-
+    <script src="./main.js"></script>
+  </body>
 </html>

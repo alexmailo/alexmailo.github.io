@@ -17,7 +17,7 @@ function get() {
 	fetch(url, { method: "GET", headers, })
 		.then(response => response.json())
 		.then( res => {
-			let events = res.events.map ( ev => ( { id: ev.id, content:ev.event_name, start:ev.event_date }));
+			let events = res.events.map ( ev => ( { id: ev.id, content:ev.event_name, start:ev.event_date, description: ev.event_description }));
 	
 			var items = new vis.DataSet(events);
 
