@@ -1,11 +1,12 @@
+
 .center {
-	display: grid;
-	place-items: center;
-	height: 100vh;
+	display: flex;
+	flex-direction: column;
 	width: 100%;
+	align-items: center;
+	margin-top: 15%;
 }
 
 #visualization {
 	width: 80%;
-	color: white;
 }
